@@ -9,7 +9,7 @@ import { signIn, signOut } from "next-auth/react";
 export default function Login() {
   // Google Handler function
   async function handleGoogleSignin() {
-    signIn("google", { callbackUrl: " http://localhost:3000" });
+    signIn("google", { callbackUrl: "https://dashboard-jkrb.vercel.app" });
   }
 
   return (
